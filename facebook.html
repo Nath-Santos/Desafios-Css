@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>
-        body {
-            background-image: url('https://img.freepik.com/vetores-gratis/fundo-do-ceu-em-aquarela-pintada-a-mao_23-2148902619.jpg?size=626&ext=jpg');
-            background-size: cover;
-            background-position: center;
-            width: 100vh;
-            margin: 0;
-        }
-    </style>
-</head>
-    <title>Clone Página de Login Facebook</title>
+    <title>Login - Facebook</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<h1><font color="white">Facebook</font></h1>
-<br><br>
-<li>
-      
-     <a href="facebook.html" target="_blank">Facebook</a> 
-      
-  </li>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9eff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #165eab;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #1877f2;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}    
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Facebook</h1>
+        </div>
+        <form class="login-form">
+            <input type="text" placeholder="Email ou telefone" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="links">
+            <a href="#">Esqueceu a senha?</a>
+            <a href="#">Criar nova conta</a>
+        </div>
+    </div>
+</body>
+</html>
